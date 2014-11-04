@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  resources :voters
+  resources :voters, :votes, :seats, :candidates
 
   namespace :api do
     namespace :v1 do
-      resources :voters
+      resources :voters, :votes, :seats, :candidates
     end
   end
 
